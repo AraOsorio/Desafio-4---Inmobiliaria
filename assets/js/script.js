@@ -1,6 +1,5 @@
-// =======================
+
 // ARREGLO VENTA
-// =======================
 const propiedades_venta = [
   {
     nombre: "Apartamento de lujo en zona exclusiva",
@@ -44,9 +43,9 @@ const propiedades_venta = [
   },
 ]
 
-// =======================
+
 // ARREGLO ALQUILER
-// =======================
+
 const propiedades_alquiler = [
   {
     nombre: "Apartamento en el centro",
@@ -90,14 +89,12 @@ const propiedades_alquiler = [
   },
 ]
 
-// =======================
-// SOLO EJECUTAR SI EXISTEN LOS CONTENEDORES
-// =======================
+
 
 const contVenta = document.querySelector("#venta")
 const contAlquiler = document.querySelector("#alquiler")
 
-// 👉 SI EXISTE #venta Y ESTÁ VACÍO = PAGINA VENTA
+
 if (contVenta && contVenta.children.length === 0) {
 
   let html = ""
@@ -135,7 +132,7 @@ if (contVenta && contVenta.children.length === 0) {
   contVenta.innerHTML = html
 }
 
-// 👉 SI EXISTE #alquiler Y ESTÁ VACÍO = PAGINA ALQUILER
+
 if (contAlquiler && contAlquiler.children.length === 0) {
 
   let html = ""
